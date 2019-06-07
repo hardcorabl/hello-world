@@ -29,10 +29,12 @@ body{
 }
 
 .header {
-    background-image: url('https://github.com/hardcorabl/hello-world/blob/master/header-background.jpg');
+    background-image: url('/blob/master/header-background.jpg');
+    background-color: #f2cb02;
     background-size: cover;
     background-position: center;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .overlay {
