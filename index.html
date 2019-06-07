@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <title>Learning Bootstrap</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="main.css">
-
     </head>
 
 <header class="page-header header containter-fluid">
-
 </header>
 
 <body>
-<nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href"#">Logo</a>
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="main-navigation">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-        <img src="Images/header-background.jpg">
-        <div class="overlay"></div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon=bar"></span>
+                <span class="icon=bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">BootstrapPractice</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"> Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2></a></li>
+                        <li><a href="#">Page 1-3></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class=glyphicon glyphicon-user"></span>Right aligned</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img class="img-responsive" src="Images/header-background.jpg" alt="Sunflower">
+    <div class="overlay"></div>
         <div class="description">
             <h1>Fingers crossed...</h1>
             <p>If you're reading this, it means something is working how it's supposed to! Hooray! If not, then, well...</p>
@@ -43,9 +56,15 @@
     <div class="container features">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="thumbnail">
+                    <a href="Images/header-background.jpg">
+                        <img src="Images/header-background.jpg" alt="Sunflower" style="width:100%">
+                        <div class="caption">
+                            <p>Caption for image in first column</p>
+                        </div>
+                    </a>
+                </div>
                 <h3 class="feature-title">One</h3>
-                <img src="Images/header-background.jpg" class="img-fluid">
-                <p>Content for the first of three columns</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <h3 class="feaure-title">Two</h3>
