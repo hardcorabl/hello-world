@@ -7,7 +7,7 @@ body{
 /*--- navigation bar ---*/
 
 .navbar {
-    background: #034c8c;
+    background: #f2b705;
 }
 
 .nav-link,
@@ -74,4 +74,27 @@ body{
     border:1px solid #fff;
     background:#fff;
     color:#000;
+}
+
+/*---columns---*/
+
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
 }
